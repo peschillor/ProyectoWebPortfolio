@@ -17,8 +17,8 @@ def skills(request):
 def interests(request):
     return HttpResponse("INTERESTS")
 
-def awards(request):
-    return HttpResponse("AWARDS")
+def certifications(request):
+    return HttpResponse("CERTIFICATIONS")
 
 def blog(request):
     return HttpResponse("BLOG")
