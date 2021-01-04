@@ -3,25 +3,25 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 
 def about(request):
-    return HttpResponse("ABOUT")
+    return render(request,"ProyectoWebApp/about.html")
 
 def experience(request):
-    return HttpResponse("EXPERIENCE")
+    return render(request,"ProyectoWebApp/experience.html")
 
 def education(request):
-    return HttpResponse("EDUCATION")
+    return render(request,"ProyectoWebApp/education.html")
 
 def skills(request):
-    return HttpResponse("SKILLS")
+    return render(request,"ProyectoWebApp/skills.html")
 
 def interests(request):
-    return HttpResponse("INTERESTS")
+    return render(request,"ProyectoWebApp/interests.html")
 
 def certifications(request):
-    return HttpResponse("CERTIFICATIONS")
+    return render(request,"ProyectoWebApp/certifications.html")
 
 def blog(request):
-    return HttpResponse("BLOG")
+    return render(request,"ProyectoWebApp/blog.html")
 
 def contact(request):
-    return HttpResponse("CONTACT")
+    return render(request,"ProyectoWebApp/contact.html")
