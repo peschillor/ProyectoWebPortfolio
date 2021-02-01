@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Resume - Start Bootstrap Theme</title>
+        <title>Mi primera Pagina - Portfolio web de Rafael Peschillo</title>
         <link rel="icon" type="image/x-icon" href="{% static 'ProyectoWebApp/assets/img/favicon.ico' %}" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -27,15 +27,23 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                   
-                
+                    <li class="nav-item {% if request.path == '/' %}active{% endif %} px-lg-4"><a class="nav-link text-uppercase text-expanded" href="{% url 'ABOUT' %}">Sobre mi</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Educacion</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Intereses</a></li>
+                    <div>
+
+                        
+                        <li class="nav-item {% if request.path == '/contacto'%}active{% endif %} px-lg-4"><a class="nav-link text-uppercase text-expanded" href="{% url 'CONTACTO' %}">Contacto</a>
+                        </li>
+                        
+                        <li class="nav-item {% if request.path == '/blog' %}active{% endif %} px-lg-4"><a class="nav-link text-uppercase text-expanded" href="{% url 'BLOG' %}">Blog</a>
+                        </li>
+                        
+                        
+                    </div>
                 </ul>
             </div>
         </nav>

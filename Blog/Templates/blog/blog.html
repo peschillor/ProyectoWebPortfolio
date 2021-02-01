@@ -1,0 +1,61 @@
+
+{% extends "ProyectoWebApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    {%for post in posts %}
+
+
+<style>
+    .contenedor{
+        width: 400px;
+        border:solid 3px #000;
+
+    }
+</style>
+
+<section class="resume-section" id="interests" enctype="multipart/form-data">
+    
+
+
+    <div class="container">
+        
+        
+        <div class="contenedor">
+            
+            <img class="img-fluid" src="{{ post.imagen.url}}" alt="">
+            
+        </div>
+    </div>
+    
+    <div>
+
+        <div class="resume-section-content">
+               
+            <h2 class="mb-5">
+                <span class="section-heading-upper">{{post.nombre}}</span>
+            </h2>
+                
+                
+            <h5 class="mb-1">
+                <span class="section-heading-lower">{{post.contenido}}</span>
+            <h5>
+                        
+        </div> 
+                    
+        <div style="text-align:left">
+            Autor:{{post.autor}}
+        </div>
+    </div>
+                                       
+</section>
+
+
+    
+    
+    {% endfor %}
+
+
+{% endblock %}
