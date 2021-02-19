@@ -7,15 +7,14 @@
 
     {%for post in posts %}
 
-
 <style>
-    .contenedor{
-        width: 400px;
-        border:solid 3px #000;
+    .conteniendoFoto{
+  width: 400px auto;
+  border:solid 3px #000;
+  border-radius: 10px;  
 
-    }
+}
 </style>
-
 <section class="resume-section" id="interests" enctype="multipart/form-data">
     
 
@@ -23,7 +22,7 @@
     <div class="container">
         
         
-        <div class="contenedor">
+        <div class="conteniendoFoto">
             
             <img class="img-fluid" src="{{ post.imagen.url}}" alt="">
             

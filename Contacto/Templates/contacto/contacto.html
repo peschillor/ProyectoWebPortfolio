@@ -1,0 +1,25 @@
+{% extends "ProyectoWebApp/base.html" %}
+
+{% block content %}
+
+<h2 class="mensajeContacto" style="text-align: center;">¡No dude en contactarme!</h2>
+<div class="contenedorFormulario" style="color:azure; text-align:center;">
+
+    <form action="" method="POST" style="text-align:center; width: 50% auto;">
+        <table style="text-align:left; margin: 20px auto;">
+
+            {% csrf_token %}
+            
+            {{form.as_table}}
+            
+        </table>
+        <input type="submit" value="Enviar" style="width: 150px;"  >
+    </form>
+    {{mensaje}}
+    
+    
+</div>
+
+
+
+{% endblock %}

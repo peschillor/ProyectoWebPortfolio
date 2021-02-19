@@ -20,5 +20,4 @@ def interests(request):
 def certifications(request):
     return render(request,"ProyectoWebApp/certifications.html")
 
-def contact(request):
-    return render(request,"ProyectoWebApp/contact.html")
+

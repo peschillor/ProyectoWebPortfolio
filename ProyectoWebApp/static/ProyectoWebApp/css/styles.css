@@ -10112,3 +10112,18 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+.contenedorFormulario{
+  
+  background-color:#bd5d38;
+  color:white;
+  width: 70%;
+  margin:50px auto;
+  border-radius: 20px;
+  padding:1px 0px;
+  
+}
+
+
+
+
